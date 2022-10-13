@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-lazily": "^0.9.1"
+  }
+}
