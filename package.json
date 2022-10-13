@@ -1,0 +1,22 @@
+{
+  "name": "shifuku",
+  "version": "1.0.0",
+  "description": "\"hotel application\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "npm start && npm run client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/temiloluwa-js/shifuku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/temiloluwa-js/shifuku/issues"
+  },
+  "homepage": "https://github.com/temiloluwa-js/shifuku#readme"
+}
