@@ -4,11 +4,10 @@
   "description": "\"hotel application\"",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/server.js",
-
-    "dev": "cd client && npm start && cd .. && cd server && nodemon server",
-    "build": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/temiloluwa-js/shifuku/issues"
   },
-  "homepage": "https://github.com/temiloluwa-js/shifuku#readme"
+  "homepage": "https://github.com/temiloluwa-js/shifuku#readme",
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
 }
