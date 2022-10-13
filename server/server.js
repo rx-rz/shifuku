@@ -24,7 +24,7 @@ app.get("*", function (_, res) {
                 res.status(500).send(err);
             }
         }
-    );
+    );      
 });
 
 connectDB().then(() => {
