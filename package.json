@@ -2,7 +2,7 @@
   "name": "shifuku",
   "version": "1.0.0",
   "description": "\"hotel application\"",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server/server.js",
 
