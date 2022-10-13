@@ -1,2 +1,3 @@
 node_modules/
-.envgit
+.env
+.idea
