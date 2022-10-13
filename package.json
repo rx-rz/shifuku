@@ -7,7 +7,8 @@
     "start": "node server/server",
     "server": "nodemon server/server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,15 @@
   },
   "homepage": "https://github.com/temiloluwa-js/shifuku#readme",
   "dependencies": {
-    "cors": "^2.8.5"
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "validator": "^13.7.0"
   }
 }
